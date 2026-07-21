@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local AI-assistant instructions injected by the workspace, not application source
+AGENTS.md
+CLAUDE.md
