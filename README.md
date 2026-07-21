@@ -21,6 +21,10 @@ Taekwon-Do ITF desde Saju Jirugi hasta Choong-Moo.
 - Vistas de grafo y secuencia: relaciones completas por técnica, secuencias
   numeradas sin duplicar movimientos con acciones simultáneas, posturas
   completas de inicio/finalización y colores por familia técnica.
+- Un **grafo global** de las 2 figuras básicas, los 9 tules y sus técnicas
+  compartidas; los filtros de tipo, técnica e idioma redistribuyen sus nodos y
+  relaciones. La vista individual muestra el inicio y la finalización como
+  contexto, sin contarlos como movimientos.
 - Significados oficiales de cada figura según el **Manual de Teoría y Programa
   Técnico de Taekwon-Do ITF de la Asociación Colombiana de Taekwon-Do ITF**.
 - Diseño mobile-first y accesible, sin bases de datos, cookies, analítica ni

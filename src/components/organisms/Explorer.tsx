@@ -7,7 +7,7 @@ import { StatCard } from "@/components/atoms/StatCard";
 import { CategoryCard } from "@/components/molecules/CategoryCard";
 import { PatternCard } from "@/components/molecules/PatternCard";
 import { TechniqueRow } from "@/components/molecules/TechniqueRow";
-import { GraphView } from "@/components/organisms/GraphView";
+import { GlobalGraphView, GraphView } from "@/components/organisms/GraphView";
 import { patternDetails } from "@/lib/pattern-details";
 import type { GraphData, Language, Movement, MovementTechnique } from "@/lib/types";
 
@@ -34,13 +34,15 @@ export function Explorer({ data }: { data: GraphData }) {
   const [technique, setTechnique] = useState(all);
   const [language, setLanguage] = useState<Language>("both");
   const [view, setView] = useState<"graph" | "sequence">("graph");
+  const [graphScope, setGraphScope] = useState<"global" | "selected">("global");
   const basicCount = data.tules.filter((name) => name.startsWith("Saju ")).length;
   const tulCount = data.tules.length - basicCount;
   const movementCount = Object.values(data.movement_sequences).flat().length;
   const selected = useMemo(() => data.movement_sequences[tul] ?? [], [data.movement_sequences, tul]);
   const relationships = data.sequences[tul] ?? [];
-  const availableTechniques = useMemo(() => uniqueTechniques(selected.filter((item) => matchesCategory(item, category))), [selected, category]);
-  const categoryCounts = useMemo(() => Object.fromEntries(categoryGroups.map((group) => [group.value, uniqueTechniques(selected.filter((item) => matchesCategory(item, group.value))).length])), [selected]);
+  const graphSource = graphScope === "global" ? Object.values(data.sequences).flat() : selected;
+  const availableTechniques = useMemo(() => uniqueTechniques(graphSource.filter((item) => matchesCategory(item, category))), [graphSource, category]);
+  const categoryCounts = useMemo(() => Object.fromEntries(categoryGroups.map((group) => [group.value, uniqueTechniques(graphSource.filter((item) => matchesCategory(item, group.value))).length])), [graphSource]);
   const visible = selected.filter((item) => matchesCategory(item, category) && matchesTechnique(item, technique));
   const visibleRelationships = relationships.filter((item) => matchesCategory(item, category) && matchesTechnique(item, technique));
   const detail = patternDetails[tul];
@@ -58,7 +60,7 @@ export function Explorer({ data }: { data: GraphData }) {
     <section className="filter-panel" aria-label="Filtros de exploración">
       <div className="filter-heading"><strong>Explora paso a paso</strong><span>Elige opciones de las listas; el contenido se adapta automáticamente.</span></div>
       <div className="filter-grid">
-        <SelectField label="Figura o tul" value={tul} onChange={(event) => { setTul(event.target.value); clear(); }}>{data.tules.map((name) => <option key={name}>{name}</option>)}</SelectField>
+        <SelectField label="Figura o tul" value={tul} onChange={(event) => { setTul(event.target.value); clear(); setGraphScope("selected"); }}>{data.tules.map((name) => <option key={name}>{name}</option>)}</SelectField>
         <SelectField label="Tipo técnico" value={category} onChange={(event) => { setCategory(event.target.value); setTechnique(all); }}><option value={all}>Todos los tipos</option>{categoryGroups.map((group) => <option key={group.value} value={group.value}>{group.label}</option>)}</SelectField>
         <SelectField label="Técnica" value={technique} onChange={(event) => setTechnique(event.target.value)}><option value={all}>Todas las técnicas</option>{availableTechniques.map((item) => <option key={techniqueKey(item)} value={techniqueKey(item)}>{display(item, language)}</option>)}</SelectField>
         <SelectField label="Terminología" value={language} onChange={(event) => setLanguage(event.target.value as Language)}><option value="both">Coreano y español</option><option value="korean">Solo coreano</option><option value="spanish">Solo español</option></SelectField>
@@ -71,12 +73,12 @@ export function Explorer({ data }: { data: GraphData }) {
     </section>
 
     <section className="workspace">
-      <nav className="pattern-nav" aria-label="Figuras y tules"><div className="section-label">Ruta pedagógica</div>{data.tules.map((name) => <PatternCard key={name} name={name} movements={data.movement_sequences[name].length} active={name === tul} onClick={() => { setTul(name); clear(); setView("graph"); }} />)}</nav>
+      <nav className="pattern-nav" aria-label="Figuras y tules"><div className="section-label">Ruta pedagógica</div>{data.tules.map((name) => <PatternCard key={name} name={name} movements={data.movement_sequences[name].length} active={name === tul && graphScope === "selected"} onClick={() => { setTul(name); clear(); setView("graph"); setGraphScope("selected"); }} />)}</nav>
       <article className="detail-panel">
         <header className="pattern-header"><div><Badge tone={detail?.kind === "Figura básica" ? "blue" : "gold"}>{detail?.kind ?? "Tul"}</Badge><h2>{tul}</h2></div><span className="visible-count">{visible.length} de {selected.length} movimientos visibles</span></header>
-        <div className="meaning-card"><span className="eyebrow">Significado oficial</span><p>{detail?.meaning}</p><small>{detail?.historicalNote}</small></div>
-        <div className="view-switch" role="tablist" aria-label="Modo de visualización"><button role="tab" aria-selected={view === "graph"} className={view === "graph" ? "view-switch--active" : ""} onClick={() => setView("graph")}>Grafo</button><button role="tab" aria-selected={view === "sequence"} className={view === "sequence" ? "view-switch--active" : ""} onClick={() => setView("sequence")}>Secuencia</button></div>
-        {view === "graph" ? <GraphView tul={tul} movements={visibleRelationships} stance={stance} language={language} /> : <><div className="stance-flow"><div><span>Inicio</span><strong>{stance.inicio_detalle}</strong></div><i aria-hidden="true">↓</i><div><span>Finalización</span><strong>{stance.final_detalle}</strong></div></div><div className="legend"><span className="legend-item legend-item--defense">Defensa</span><span className="legend-item legend-item--punch">Puñetazo</span><span className="legend-item legend-item--strike">Golpe</span><span className="legend-item legend-item--thrust">Estocada</span><span className="legend-item legend-item--kick">Patada</span><span className="legend-item legend-item--other">Otra</span></div><section><div className="sequence-heading"><div><span className="eyebrow">Secuencia</span><h3>Movimientos en orden</h3></div><span>Los números conservan el orden original aun al filtrar.</span></div>{visible.length ? <ol className="technique-list">{visible.map((movement) => <TechniqueRow key={movement.movimiento} movement={movement} language={language} techniques={movementTechniques(movement).filter((entry) => matchesCategory({ ...movement, tecnicas: [entry] }, category) && matchesTechnique({ ...movement, tecnicas: [entry] }, technique))} />)}</ol> : <div className="empty-state">No hay movimientos que correspondan a esta combinación de filtros. <button onClick={clear}>Ver todos</button></div>}</section></>}
+        <div className="meaning-card"><span className="eyebrow">Significado</span><p>{detail?.meaning}</p><small>{detail?.historicalNote}</small></div>
+        <div className="view-switch" role="tablist" aria-label="Modo de visualización"><button role="tab" aria-selected={view === "graph" && graphScope === "global"} className={view === "graph" && graphScope === "global" ? "view-switch--active" : ""} onClick={() => { setView("graph"); setGraphScope("global"); }}>Grafo global</button><button role="tab" aria-selected={view === "graph" && graphScope === "selected"} className={view === "graph" && graphScope === "selected" ? "view-switch--active" : ""} onClick={() => { setView("graph"); setGraphScope("selected"); }}>Grafo de {tul}</button><button role="tab" aria-selected={view === "sequence"} className={view === "sequence" ? "view-switch--active" : ""} onClick={() => setView("sequence")}>Secuencia</button></div>
+        {view === "graph" ? graphScope === "global" ? <GlobalGraphView data={data} filters={{ category, technique }} language={language} /> : <GraphView tul={tul} movements={visibleRelationships} stance={stance} language={language} /> : <><div className="stance-flow"><div><span>Inicio</span><strong>{stance.inicio_detalle}</strong></div><i aria-hidden="true">↓</i><div><span>Finalización</span><strong>{stance.final_detalle}</strong></div></div><div className="legend"><span className="legend-item legend-item--defense">Defensa</span><span className="legend-item legend-item--punch">Puñetazo</span><span className="legend-item legend-item--strike">Golpe</span><span className="legend-item legend-item--thrust">Estocada</span><span className="legend-item legend-item--kick">Patada</span><span className="legend-item legend-item--other">Otra</span></div><section><div className="sequence-heading"><div><span className="eyebrow">Secuencia</span><h3>Movimientos en orden</h3></div><span>Los números conservan el orden original aun al filtrar.</span></div>{visible.length ? <ol className="technique-list">{visible.map((movement) => <TechniqueRow key={movement.movimiento} movement={movement} language={language} techniques={movementTechniques(movement).filter((entry) => matchesCategory({ ...movement, tecnicas: [entry] }, category) && matchesTechnique({ ...movement, tecnicas: [entry] }, technique))} />)}</ol> : <div className="empty-state">No hay movimientos que correspondan a esta combinación de filtros. <button onClick={clear}>Ver todos</button></div>}</section></>}
       </article>
     </section>
     <footer>Datos técnicos de consulta académica. La terminología y los significados deben contrastarse con el manual institucional antes de publicación editorial.</footer>
