@@ -1,4 +1,4 @@
-# Explorador técnico de Tules ITF
+# Explorador técnico de figuras y tules ITF
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.2.11-000?logo=nextdotjs)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2-149eca?logo=react)](https://react.dev/)
@@ -10,17 +10,19 @@ Taekwon-Do ITF desde Saju Jirugi hasta Choong-Moo.
 
 ## Qué ofrece
 
-- 2 figuras básicas, 9 tules, 273 movimientos y 78 técnicas canónicas.
+- 2 figuras básicas, 9 tules, 288 movimientos técnicos y 78 técnicas canónicas.
+  Las posturas de inicio y finalización se visualizan, pero no se contabilizan
+  como movimientos.
 - Filtros desplegables para figura, tipo técnico, técnica y terminología
   (coreano, español o ambos), pensados para aprendizaje guiado.
 - Tarjetas interactivas de categoría con el conteo de técnicas canónicas:
   Makgi/defensa, Jirugi/ataque de puño, Taerigi/golpe, Tulgi/estocada,
   Chagi/patada y otras técnicas o transiciones.
-- Secuencias numeradas, posturas completas de inicio/finalización y colores por
-  familia técnica: defensa, puñetazo, golpe, estocada, patada u otra.
+- Vistas de grafo y secuencia: relaciones completas por técnica, secuencias
+  numeradas sin duplicar movimientos con acciones simultáneas, posturas
+  completas de inicio/finalización y colores por familia técnica.
 - Significados oficiales de cada figura según el **Manual de Teoría y Programa
-  Técnico de Taekwon-Do ITF de la Asociación Colombiana de Taekwon-Do ITF**,
-  consultado mediante el cuaderno NotebookLM del propietario del proyecto.
+  Técnico de Taekwon-Do ITF de la Asociación Colombiana de Taekwon-Do ITF**.
 - Diseño mobile-first y accesible, sin bases de datos, cookies, analítica ni
   credenciales expuestas.
 
@@ -76,8 +78,8 @@ Asociación Colombiana de Taekwon-Do ITF. La secuencia técnica es material de
 consulta académica; antes de utilizarla para enseñanza o evaluación debe ser
 revisada por un instructor ITF competente.
 
-El repositorio no contiene el PDF/cuaderno privado de NotebookLM ni archivos
-de la tesis. Solo incluye datos técnicos publicados para la visualización.
+El repositorio no contiene el manual institucional ni archivos de la tesis.
+Solo incluye datos técnicos publicados para la visualización.
 
 ## Licencia
 

@@ -12,7 +12,10 @@ export type Movement = {
   coreano: string;
   espanol: string;
   categoria: string;
+  tecnicas?: MovementTechnique[];
 };
+
+export type MovementTechnique = Pick<Movement, "coreano" | "espanol" | "categoria">;
 
 export type Stance = {
   inicio: string;
@@ -25,5 +28,6 @@ export type GraphData = {
   tules: string[];
   stances: Record<string, Stance>;
   sequences: Record<string, Movement[]>;
+  movement_sequences: Record<string, Movement[]>;
   techniques: Technique[];
 };

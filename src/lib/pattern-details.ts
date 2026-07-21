@@ -5,7 +5,7 @@ export type PatternDetail = {
 };
 
 // Fuente editorial exclusiva: Manual de Teoría y Programa Técnico de Taekwon-Do ITF
-// de la Asociación Colombiana de Taekwon-Do ITF, consultado en NotebookLM (2026-07-21).
+// de la Asociación Colombiana de Taekwon-Do ITF (consulta: 2026-07-21).
 export const patternDetails: Record<string, PatternDetail> = {
   "Saju Jirugi": {
     kind: "Figura básica",
