@@ -1,4 +1,4 @@
-import { useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode } from "react";
+import { useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode, type WheelEvent } from "react";
 import { categoryClass } from "@/components/molecules/TechniqueRow";
 import type { GraphData, Language, Movement, Stance, Technique } from "@/lib/types";
 
@@ -57,6 +57,10 @@ function InteractiveGraphCanvas({ label, children }: { label: string; children: 
     setPan({ x: dragStart.current.panX + event.clientX - dragStart.current.x, y: dragStart.current.panY + event.clientY - dragStart.current.y });
   };
   const stopPan = () => { dragStart.current = null; };
+  const zoomWithWheel = (event: WheelEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    zoomBy(event.deltaY < 0 ? 0.1 : -0.1);
+  };
 
   return <div className="graph-interaction">
     <div className="graph-controls" aria-label={`Controles de ${label}`}>
@@ -65,7 +69,7 @@ function InteractiveGraphCanvas({ label, children }: { label: string; children: 
       <button type="button" onClick={() => zoomBy(0.15)} aria-label="Acercar">+</button>
       <button type="button" className="graph-reset" onClick={reset}>Restaurar</button>
     </div>
-    <div className="graph-viewport" role="region" aria-label={`${label}. Arrastra para desplazarte; usa los controles para acercar, alejar o restaurar.`} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={stopPan} onPointerCancel={stopPan}>
+    <div className="graph-viewport" role="region" aria-label={`${label}. Arrastra para desplazarte; usa la rueda para acercar o alejar y los controles para restaurar.`} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={stopPan} onPointerCancel={stopPan} onWheel={zoomWithWheel}>
       <div className="graph-canvas" style={{ transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})` }}>{children}</div>
     </div>
   </div>;
