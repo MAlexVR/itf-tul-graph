@@ -1,0 +1,2853 @@
+{
+  "tules": [
+    "Saju Jirugi",
+    "Saju Makgi",
+    "Chon-Ji",
+    "Dan-Gun",
+    "Do-San",
+    "Won-Hyo",
+    "Yul-Gok",
+    "Joong-Gun",
+    "Toi-Gye",
+    "Hwa-Rang",
+    "Choong-Moo"
+  ],
+  "stances": {
+    "Chon-Ji": {
+      "inicio": "Narani Junbi Sogi",
+      "final": "Narani Junbi Sogi",
+      "inicio_detalle": "Narani Junbi Sogi",
+      "final_detalle": "retorno a Narani Junbi Sogi tras el movimiento 19"
+    },
+    "Choong-Moo": {
+      "inicio": "Narani Junbi Sogi",
+      "final": "Narani Junbi Sogi",
+      "inicio_detalle": "Narani Junbi Sogi",
+      "final_detalle": "retorno a Narani Junbi Sogi tras el movimiento 30"
+    },
+    "Dan-Gun": {
+      "inicio": "Narani Junbi Sogi",
+      "final": "Narani Junbi Sogi",
+      "inicio_detalle": "Narani Junbi Sogi",
+      "final_detalle": "retorno a Narani Junbi Sogi tras el movimiento 21"
+    },
+    "Do-San": {
+      "inicio": "Narani Junbi Sogi",
+      "final": "Narani Junbi Sogi",
+      "inicio_detalle": "Narani Junbi Sogi",
+      "final_detalle": "retorno a Narani Junbi Sogi tras el movimiento 24"
+    },
+    "Hwa-Rang": {
+      "inicio": "Moa Junbi Sogi C",
+      "final": "Moa Junbi Sogi C",
+      "inicio_detalle": "Moa Junbi Sogi C",
+      "final_detalle": "retorno a Moa Junbi Sogi C tras el movimiento 29"
+    },
+    "Joong-Gun": {
+      "inicio": "Moa Junbi Sogi B",
+      "final": "Moa Junbi Sogi B",
+      "inicio_detalle": "Moa Junbi Sogi B",
+      "final_detalle": "retorno a Moa Junbi Sogi B tras el movimiento 32"
+    },
+    "Saju Jirugi": {
+      "inicio": "Narani Junbi Sogi",
+      "final": "Narani Junbi Sogi",
+      "inicio_detalle": "Narani Junbi Sogi",
+      "final_detalle": "retorno a Narani Junbi Sogi después de completar ambos lados"
+    },
+    "Saju Makgi": {
+      "inicio": "Narani Junbi Sogi",
+      "final": "Narani Junbi Sogi",
+      "inicio_detalle": "Narani Junbi Sogi",
+      "final_detalle": "retorno a Narani Junbi Sogi después de completar ambos lados"
+    },
+    "Toi-Gye": {
+      "inicio": "Moa Junbi Sogi B",
+      "final": "Moa Junbi Sogi B",
+      "inicio_detalle": "Moa Junbi Sogi B",
+      "final_detalle": "retorno a Moa Junbi Sogi B tras el movimiento 37"
+    },
+    "Won-Hyo": {
+      "inicio": "Moa Junbi Sogi A",
+      "final": "Moa Junbi Sogi A",
+      "inicio_detalle": "Moa Junbi Sogi A",
+      "final_detalle": "retorno a Moa Junbi Sogi A tras el movimiento 28"
+    },
+    "Yul-Gok": {
+      "inicio": "Narani Junbi Sogi",
+      "final": "Narani Junbi Sogi",
+      "inicio_detalle": "Narani Junbi Sogi",
+      "final_detalle": "retorno a Narani Junbi Sogi tras el movimiento 38"
+    }
+  },
+  "sequences": {
+    "Chon-Ji": [
+      {
+        "movimiento": 1,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Niunja Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Niunja Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Niunja Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Niunja Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      }
+    ],
+    "Choong-Moo": [
+      {
+        "movimiento": 1,
+        "coreano": "Niunja Sogi Sang Sonkal Makgi",
+        "espanol": "Bloqueo doble con cantos de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Gunnun Sogi Sonkal Nopunde Ap Taerigi",
+        "espanol": "Golpe frontal alto con canto de mano, postura de caminar",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Gunnun Sogi Opun Sonkut Nopunde Tulgi",
+        "espanol": "Estocada alta con punta de dedos abierta, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Guburyo Junbi Sogi A",
+        "espanol": "Postura de preparación para patada frontal o coz",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Twimyo Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante en salto",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Niunja Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Gunnun Sogi",
+        "espanol": "Adopción de postura de caminar como preparación para la patada de rodilla siguiente",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Moorup Ollyo Chagi",
+        "espanol": "Patada ascendente con rodilla",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Gunnun Sogi Sonkal Dung Nopunde Ap Taerigi",
+        "espanol": "Golpe frontal alto con dorso de canto de mano, postura de caminar",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Nopunde Dollyo Chagi",
+        "espanol": "Patada circular alta",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Kaunde Dwitcha Jirugi",
+        "espanol": "Patada hacia atrás media penetrante (coz)",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Niunja Sogi Palmok Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con antebrazo, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Kaunde Dollyo Chagi",
+        "espanol": "Patada circular media",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Gojung Sogi Digutja Makgi",
+        "espanol": "Bloqueo en forma de “L”, postura fija",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 20,
+        "coreano": "Gunnun Sogi Dwijibun Sonkut Najunde Bandae Tulgi",
+        "espanol": "Estocada baja inversa con punta de dedos invertida, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 21,
+        "coreano": "Niunja Sogi Dung Joomuk Nopunde Yopdwi Taerigi",
+        "espanol": "Golpe lateral hacia atrás alto con dorso de puño, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 22,
+        "coreano": "Gunnun Sogi Sun Sonkut Tulgi",
+        "espanol": "Estocada con punta de dedos rectos, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 23,
+        "coreano": "Gunnun Sogi Doo Palmok Nopunde Makgi",
+        "espanol": "Bloqueo alto con doble antebrazo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 24,
+        "coreano": "Annun Sogi Dung Joomuk Nopunde Yop Taerigi",
+        "espanol": "Golpe lateral alto con dorso de puño, postura de jinete",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 24,
+        "coreano": "Annun Sogi Palmok Kaunde Ap Makgi",
+        "espanol": "Bloqueo frontal medio con antebrazo, postura de jinete",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 25,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 26,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 27,
+        "coreano": "Niunja Sogi Kyocha Sonkal Kaunde Momcho Makgi",
+        "espanol": "Bloqueo de comprobación medio con canto de mano en X, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 28,
+        "coreano": "Gunnun Sogi Doo Sonbadak Ollyo Makgi",
+        "espanol": "Bloqueo ascendente con doble palma, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 29,
+        "coreano": "Gunnun Sogi Bakat Palmok Chukyo Makgi",
+        "espanol": "Bloqueo ascendente con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 30,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      }
+    ],
+    "Dan-Gun": [
+      {
+        "movimiento": 1,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Niunja Sogi Sang Palmok Makgi",
+        "espanol": "Bloqueo doble con antebrazos, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Niunja Sogi Sang Palmok Makgi",
+        "espanol": "Bloqueo doble con antebrazos, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Gunnun Sogi Bakat Palmok Chukyo Makgi",
+        "espanol": "Bloqueo ascendente con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Gunnun Sogi Bakat Palmok Chukyo Makgi",
+        "espanol": "Bloqueo ascendente con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Gunnun Sogi Bakat Palmok Chukyo Makgi",
+        "espanol": "Bloqueo ascendente con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Gunnun Sogi Bakat Palmok Chukyo Makgi",
+        "espanol": "Bloqueo ascendente con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Niunja Sogi Sonkal Kaunde Yop Taerigi",
+        "espanol": "Golpe lateral medio con canto de mano, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 20,
+        "coreano": "Niunja Sogi Sonkal Kaunde Yop Taerigi",
+        "espanol": "Golpe lateral medio con canto de mano, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 21,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+        "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      }
+    ],
+    "Do-San": [
+      {
+        "movimiento": 1,
+        "coreano": "Gunnun Sogi Bakat Palmok Nopunde Baro Yop Makgi",
+        "espanol": "Bloqueo lateral alto directo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Gunnun Sogi Bakat Palmok Nopunde Baro Yop Makgi",
+        "espanol": "Bloqueo lateral alto directo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Gunnun Sogi Sun Sonkut Tulgi",
+        "espanol": "Estocada con punta de dedos rectos, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Gunnun Sogi Dung Joomuk Nopunde Yop Taerigi",
+        "espanol": "Golpe lateral alto con dorso de puño, postura de caminar",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Gunnun Sogi Dung Joomuk Nopunde Yop Taerigi",
+        "espanol": "Golpe lateral alto con dorso de puño, postura de caminar",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Gunnun Sogi Bakat Palmok Nopunde Baro Yop Makgi",
+        "espanol": "Bloqueo lateral alto directo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Gunnun Sogi Bakat Palmok Nopunde Baro Yop Makgi",
+        "espanol": "Bloqueo lateral alto directo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Gunnun Sogi Bakat Palmok Nopunde Hechyo Makgi",
+        "espanol": "Bloqueo alto separando con antebrazos externos, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Kaunde Apcha Busigi",
+        "espanol": "Patada frontal media de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Gunnun Sogi Bakat Palmok Nopunde Hechyo Makgi",
+        "espanol": "Bloqueo alto separando con antebrazos externos, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Kaunde Apcha Busigi",
+        "espanol": "Patada frontal media de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 20,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 21,
+        "coreano": "Gunnun Sogi Bakat Palmok Chukyo Makgi",
+        "espanol": "Bloqueo ascendente con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 22,
+        "coreano": "Gunnun Sogi Bakat Palmok Chukyo Makgi",
+        "espanol": "Bloqueo ascendente con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 23,
+        "coreano": "Annun Sogi Sonkal Kaunde Yop Taerigi",
+        "espanol": "Golpe lateral medio con canto de mano, postura de jinete",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 24,
+        "coreano": "Annun Sogi Sonkal Kaunde Yop Taerigi",
+        "espanol": "Golpe lateral medio con canto de mano, postura de jinete",
+        "categoria": "Taerigi / golpe"
+      }
+    ],
+    "Hwa-Rang": [
+      {
+        "movimiento": 1,
+        "coreano": "Annun Sogi Sonbadak Miro Makgi",
+        "espanol": "Bloqueo medio empujando con palma, postura de jinete",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Annun Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura de jinete",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Annun Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura de jinete",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Niunja Sogi Sang Palmok Makgi",
+        "espanol": "Bloqueo doble con antebrazos, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Niunja Sogi Ap Joomuk Ollyo Jirugi",
+        "espanol": "Puñetazo ascendente con puño frontal, postura en L",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Gojung Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura fija",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Soojik Sogi Sonkal Naeryo Taerigi",
+        "espanol": "Golpe descendente con canto de mano, postura vertical",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Niunja Sogi Sonkal Kaunde Yop Taerigi",
+        "espanol": "Golpe lateral medio con canto de mano, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Gunnun Sogi Sun Sonkut Tulgi",
+        "espanol": "Estocada con punta de dedos rectos, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Nopunde Dollyo Chagi",
+        "espanol": "Patada circular alta",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Nopunde Dollyo Chagi",
+        "espanol": "Patada circular alta",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 20,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 21,
+        "coreano": "Niunja Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura en L",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 22,
+        "coreano": "Niunja Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura en L",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 23,
+        "coreano": "Niunja Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura en L",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 24,
+        "coreano": "Gunnun Sogi Kyocha Joomuk Noollo Makgi",
+        "espanol": "Bloqueo presionante con puño en X, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 25,
+        "coreano": "Niunja Sogi Yop Palkup Tulgi",
+        "espanol": "Estocada lateral con codo, postura en L",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 26,
+        "coreano": "Moa Sogi An Palmok Nopunde Yopap Makgi",
+        "espanol": "Bloqueo frontal-lateral alto con antebrazo interno, postura de pies juntos",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 27,
+        "coreano": "Moa Sogi An Palmok Nopunde Yopap Makgi",
+        "espanol": "Bloqueo frontal-lateral alto con antebrazo interno, postura de pies juntos",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 28,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 29,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      }
+    ],
+    "Joong-Gun": [
+      {
+        "movimiento": 1,
+        "coreano": "Niunja Sogi Sonkal Dung Kaunde Bakuro Makgi",
+        "espanol": "Bloqueo medio hacia afuera con dorso de canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Najunde Yop Apcha Busigi",
+        "espanol": "Patada frontal lateral baja de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Dwitbal Sogi Sonbadak Bandae Ollyo Makgi",
+        "espanol": "Bloqueo ascendente inverso con palma, postura de gato",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Niunja Sogi Sonkal Dung Kaunde Bakuro Makgi",
+        "espanol": "Bloqueo medio hacia afuera con dorso de canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Najunde Yop Apcha Busigi",
+        "espanol": "Patada frontal lateral baja de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Dwitbal Sogi Sonbadak Bandae Ollyo Makgi",
+        "espanol": "Bloqueo ascendente inverso con palma, postura de gato",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Gunnun Sogi Wi Palkup Taerigi",
+        "espanol": "Golpe ascendente con codo, postura de caminar",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Gunnun Sogi Wi Palkup Taerigi",
+        "espanol": "Golpe ascendente con codo, postura de caminar",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Gunnun Sogi Sang Joomuk Nopunde Sewo Jirugi",
+        "espanol": "Puñetazo vertical alto con puño doble, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Gunnun Sogi Sang Joomuk Dwijibo Jirugi",
+        "espanol": "Puñetazo con puño doble invertido, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Gunnun Sogi Kyocha Joomuk Chukyo Makgi",
+        "espanol": "Bloqueo ascendente con puño en X, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Niunja Sogi Dung Joomuk Nopunde Yop Taerigi",
+        "espanol": "Golpe lateral alto con dorso de puño, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Disengage (denominación de Sonkal; sin nombre coreano indicado)",
+        "espanol": "Desenganche: giro preparatorio de puño y avance en postura de caminar",
+        "categoria": "Técnica o transición"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Bandae Jirugi",
+        "espanol": "Puñetazo alto inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Niunja Sogi Dung Joomuk Nopunde Yop Taerigi",
+        "espanol": "Golpe lateral alto con dorso de puño, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Disengage (denominación de Sonkal; sin nombre coreano indicado)",
+        "espanol": "Desenganche: giro preparatorio de puño y avance en postura de caminar",
+        "categoria": "Técnica o transición"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Gunnun Sogi Ap Joomuk Nopunde Bandae Jirugi",
+        "espanol": "Puñetazo alto inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 20,
+        "coreano": "Gunnun Sogi Doo Palmok Nopunde Makgi",
+        "espanol": "Bloqueo alto con doble antebrazo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 21,
+        "coreano": "Niunja Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura en L",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 22,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 23,
+        "coreano": "Gunnun Sogi Doo Palmok Nopunde Makgi",
+        "espanol": "Bloqueo alto con doble antebrazo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 24,
+        "coreano": "Niunja Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura en L",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 25,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 26,
+        "coreano": "Niunja Sogi Palmok Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con antebrazo, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 27,
+        "coreano": "Nachuo Sogi Sonbadak Bandae Noollo Makgi",
+        "espanol": "Bloqueo presionante inverso con palma, postura baja",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 28,
+        "coreano": "Niunja Sogi Palmok Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con antebrazo, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 29,
+        "coreano": "Nachuo Sogi Sonbadak Bandae Noollo Makgi",
+        "espanol": "Bloqueo presionante inverso con palma, postura baja",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 30,
+        "coreano": "Moa Sogi Kiokja Jirugi",
+        "espanol": "Puñetazo en ángulo, postura de pies juntos",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 31,
+        "coreano": "Gojung Sogi Digutja Makgi",
+        "espanol": "Bloqueo en forma de “L”, postura fija",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 32,
+        "coreano": "Gojung Sogi Digutja Makgi",
+        "espanol": "Bloqueo en forma de “L”, postura fija",
+        "categoria": "Makgi / bloqueo o defensa"
+      }
+    ],
+    "Saju Jirugi": [
+      {
+        "movimiento": 1,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, en postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, en postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, en postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+        "espanol": "Bloqueo bajo con antebrazo externo, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, en postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      }
+    ],
+    "Saju Makgi": [
+      {
+        "movimiento": 1,
+        "coreano": "Gunnun Sogi Sonkal Najunde Makgi",
+        "espanol": "Bloqueo bajo con canto de mano, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Gunnun Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Gunnun Sogi Sonkal Najunde Makgi",
+        "espanol": "Bloqueo bajo con canto de mano, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Gunnun Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Gunnun Sogi Sonkal Najunde Makgi",
+        "espanol": "Bloqueo bajo con canto de mano, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Gunnun Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Gunnun Sogi Sonkal Najunde Makgi",
+        "espanol": "Bloqueo bajo con canto de mano, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Gunnun Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, en postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      }
+    ],
+    "Toi-Gye": [
+      {
+        "movimiento": 1,
+        "coreano": "Niunja Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Gunnun Sogi Dwijibun Sonkut Najunde Bandae Tulgi",
+        "espanol": "Estocada baja inversa con punta de dedos invertida, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Moa Sogi Dung Joomuk Yopdwi Taerigi",
+        "espanol": "Golpe lateral hacia atrás con dorso de puño, postura de pies juntos",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Niunja Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Gunnun Sogi Dwijibun Sonkut Najunde Bandae Tulgi",
+        "espanol": "Estocada baja inversa con punta de dedos invertida, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Moa Sogi Dung Joomuk Yopdwi Taerigi",
+        "espanol": "Golpe lateral hacia atrás con dorso de puño, postura de pies juntos",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Gunnun Sogi Kyocha Joomuk Noollo Makgi",
+        "espanol": "Bloqueo presionante con puño en X, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Gunnun Sogi Sang Joomuk Nopunde Sewo Jirugi",
+        "espanol": "Puñetazo vertical alto con puño doble, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Kaunde Apcha Busigi",
+        "espanol": "Patada frontal media de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Moa Sogi Sang Yop Palkup Tulgi",
+        "espanol": "Estocada lateral alta con codo, postura de pies juntos",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Annun Sogi Bakat Palmok San Makgi",
+        "espanol": "Bloqueo de montaña con antebrazos externos, postura de jinete",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Annun Sogi Bakat Palmok San Makgi",
+        "espanol": "Bloqueo de montaña con antebrazos externos, postura de jinete",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Annun Sogi Bakat Palmok San Makgi",
+        "espanol": "Bloqueo de montaña con antebrazos externos, postura de jinete",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Annun Sogi Bakat Palmok San Makgi",
+        "espanol": "Bloqueo de montaña con antebrazos externos, postura de jinete",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Annun Sogi Bakat Palmok San Makgi",
+        "espanol": "Bloqueo de montaña con antebrazos externos, postura de jinete",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Annun Sogi Bakat Palmok San Makgi",
+        "espanol": "Bloqueo de montaña con antebrazos externos, postura de jinete",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Niunja Sogi Doo Palmok Najunde Miro Makgi",
+        "espanol": "Bloqueo bajo empujando con doble antebrazo, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 20,
+        "coreano": "Gunnun Sogi",
+        "espanol": "Adopción de postura de caminar como preparación para la patada de rodilla siguiente",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 21,
+        "coreano": "Moorup Ollyo Chagi",
+        "espanol": "Patada ascendente con rodilla",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 22,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 23,
+        "coreano": "Najunde Yop Apcha Busigi",
+        "espanol": "Patada frontal lateral baja de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 24,
+        "coreano": "Gunnun Sogi Opun Sonkut Nopunde Tulgi",
+        "espanol": "Estocada alta con punta de dedos abierta, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 25,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 26,
+        "coreano": "Najunde Yop Apcha Busigi",
+        "espanol": "Patada frontal lateral baja de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 27,
+        "coreano": "Gunnun Sogi Opun Sonkut Nopunde Tulgi",
+        "espanol": "Estocada alta con punta de dedos abierta, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 28,
+        "coreano": "Niunja Sogi Dung Joomuk Nopunde Yopdwi Taerigi",
+        "espanol": "Golpe lateral hacia atrás alto con dorso de puño, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 29,
+        "coreano": "Kyocha Sogi Kyocha Joomuk Noollo Makgi",
+        "espanol": "Bloqueo presionante con puño en X, postura en X",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 30,
+        "coreano": "Gunnun Sogi Doo Palmok Nopunde Makgi",
+        "espanol": "Bloqueo alto con doble antebrazo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 31,
+        "coreano": "Niunja Sogi Sonkal Najunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia bajo con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 32,
+        "coreano": "Gunnun Sogi An Palmok Dollimyo Makgi",
+        "espanol": "Bloqueo giratorio con antebrazo interno, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 33,
+        "coreano": "Niunja Sogi Sonkal Najunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia bajo con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 34,
+        "coreano": "Gunnun Sogi An Palmok Dollimyo Makgi",
+        "espanol": "Bloqueo giratorio con antebrazo interno, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 35,
+        "coreano": "Gunnun Sogi An Palmok Dollimyo Makgi",
+        "espanol": "Bloqueo giratorio con antebrazo interno, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 36,
+        "coreano": "Gunnun Sogi An Palmok Dollimyo Makgi",
+        "espanol": "Bloqueo giratorio con antebrazo interno, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 37,
+        "coreano": "Annun Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura de jinete",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      }
+    ],
+    "Won-Hyo": [
+      {
+        "movimiento": 1,
+        "coreano": "Niunja Sogi Sang Palmok Makgi",
+        "espanol": "Bloqueo doble con antebrazos, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Niunja Sogi Sonkal Nopunde Anuro Taerigi",
+        "espanol": "Golpe alto hacia adentro con canto de mano, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Gojung Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura fija",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Niunja Sogi Sang Palmok Makgi",
+        "espanol": "Bloqueo doble con antebrazos, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Niunja Sogi Sonkal Nopunde Anuro Taerigi",
+        "espanol": "Golpe alto hacia adentro con canto de mano, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Gojung Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura fija",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Guburyo Junbi Sogi A",
+        "espanol": "Postura de preparación para patada frontal o coz",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Gunnun Sogi Sun Sonkut Tulgi",
+        "espanol": "Estocada con punta de dedos rectos, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Niunja Sogi Sang Palmok Makgi",
+        "espanol": "Bloqueo doble con antebrazos, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Niunja Sogi Sonkal Nopunde Anuro Taerigi",
+        "espanol": "Golpe alto hacia adentro con canto de mano, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Gojung Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura fija",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Niunja Sogi Sang Palmok Makgi",
+        "espanol": "Bloqueo doble con antebrazos, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Niunja Sogi Sonkal Nopunde Anuro Taerigi",
+        "espanol": "Golpe alto hacia adentro con canto de mano, postura en L",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Gojung Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura fija",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Gunnun Sogi An Palmok Dollimyo Makgi",
+        "espanol": "Bloqueo giratorio con antebrazo interno, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 20,
+        "coreano": "Najunde Apcha Busigi",
+        "espanol": "Patada frontal baja de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 21,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 22,
+        "coreano": "Gunnun Sogi An Palmok Dollimyo Makgi",
+        "espanol": "Bloqueo giratorio con antebrazo interno, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 23,
+        "coreano": "Najunde Apcha Busigi",
+        "espanol": "Patada frontal baja de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 24,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 25,
+        "coreano": "Guburyo Junbi Sogi A",
+        "espanol": "Postura de preparación para patada frontal o coz",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 26,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 27,
+        "coreano": "Niunja Sogi Palmok Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con antebrazo, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 28,
+        "coreano": "Niunja Sogi Palmok Kaunde Daebi Makgi",
+        "espanol": "Bloqueo de guardia medio con antebrazo, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      }
+    ],
+    "Yul-Gok": [
+      {
+        "movimiento": 1,
+        "coreano": "Annun Sogi (extensión horizontal de puño)",
+        "espanol": "Adopción de postura de jinete con extensión horizontal del puño; preparación de la combinación rápida siguiente",
+        "categoria": "Sogi / postura"
+      },
+      {
+        "movimiento": 2,
+        "coreano": "Annun Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura de jinete",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 3,
+        "coreano": "Annun Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura de jinete",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 4,
+        "coreano": "Annun Sogi (extensión horizontal de puño)",
+        "espanol": "Adopción de postura de jinete con extensión horizontal del puño; preparación de la combinación rápida siguiente",
+        "categoria": "Sogi / postura"
+      },
+      {
+        "movimiento": 5,
+        "coreano": "Annun Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura de jinete",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 6,
+        "coreano": "Annun Sogi Ap Joomuk Kaunde Jirugi",
+        "espanol": "Puñetazo medio con puño frontal, postura de jinete",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 7,
+        "coreano": "Gunnun Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 8,
+        "coreano": "Najunde Apcha Busigi",
+        "espanol": "Patada frontal baja de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 9,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 10,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 11,
+        "coreano": "Gunnun Sogi An Palmok Kaunde Yop Makgi",
+        "espanol": "Bloqueo lateral medio con antebrazo interno, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 12,
+        "coreano": "Najunde Apcha Busigi",
+        "espanol": "Patada frontal baja de golpeo",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 13,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 14,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 15,
+        "coreano": "Gunnun Sogi Sonbadak Kaunde Baro Golcho Makgi",
+        "espanol": "Bloqueo medio de enganche directo con palma, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 16,
+        "coreano": "Gunnun Sogi Sonbadak Kaunde Bandae Golcho Makgi",
+        "espanol": "Bloqueo medio de enganche inverso con palma, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 17,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 18,
+        "coreano": "Gunnun Sogi Sonbadak Kaunde Baro Golcho Makgi",
+        "espanol": "Bloqueo medio de enganche directo con palma, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 19,
+        "coreano": "Gunnun Sogi Sonbadak Kaunde Bandae Golcho Makgi",
+        "espanol": "Bloqueo medio de enganche inverso con palma, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 20,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 21,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+        "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 22,
+        "coreano": "Guburyo Junbi Sogi A",
+        "espanol": "Postura de preparación para patada frontal o coz",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 23,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 24,
+        "coreano": "Gunnun Sogi Ap Palkup Bandae Taerigi",
+        "espanol": "Golpe inverso con codo frontal, postura de caminar",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 25,
+        "coreano": "Guburyo Junbi Sogi A",
+        "espanol": "Postura de preparación para patada frontal o coz",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 26,
+        "coreano": "Kaunde Yopcha Jirugi",
+        "espanol": "Patada lateral media penetrante",
+        "categoria": "Chagi / patada"
+      },
+      {
+        "movimiento": 27,
+        "coreano": "Gunnun Sogi Ap Palkup Bandae Taerigi",
+        "espanol": "Golpe inverso con codo frontal, postura de caminar",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 28,
+        "coreano": "Niunja Sogi Sang Sonkal Makgi",
+        "espanol": "Bloqueo doble con cantos de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 29,
+        "coreano": "Gunnun Sogi Sun Sonkut Tulgi",
+        "espanol": "Estocada con punta de dedos rectos, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 30,
+        "coreano": "Niunja Sogi Sang Sonkal Makgi",
+        "espanol": "Bloqueo doble con cantos de mano, postura en L",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 31,
+        "coreano": "Gunnun Sogi Sun Sonkut Tulgi",
+        "espanol": "Estocada con punta de dedos rectos, postura de caminar",
+        "categoria": "Tulgi / estocada"
+      },
+      {
+        "movimiento": 32,
+        "coreano": "Gunnun Sogi Bakat Palmok Nopunde Baro Yop Makgi",
+        "espanol": "Bloqueo lateral alto directo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 33,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 34,
+        "coreano": "Gunnun Sogi Bakat Palmok Nopunde Baro Yop Makgi",
+        "espanol": "Bloqueo lateral alto directo con antebrazo externo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 35,
+        "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+        "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+        "categoria": "Jirugi / puñetazo o ataque de puño"
+      },
+      {
+        "movimiento": 36,
+        "coreano": "Kyocha Sogi Dung Joomuk Nopunde Yop Taerigi",
+        "espanol": "Golpe lateral alto con dorso de puño, postura en X",
+        "categoria": "Taerigi / golpe"
+      },
+      {
+        "movimiento": 37,
+        "coreano": "Gunnun Sogi Doo Palmok Nopunde Makgi",
+        "espanol": "Bloqueo alto con doble antebrazo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      },
+      {
+        "movimiento": 38,
+        "coreano": "Gunnun Sogi Doo Palmok Nopunde Makgi",
+        "espanol": "Bloqueo alto con doble antebrazo, postura de caminar",
+        "categoria": "Makgi / bloqueo o defensa"
+      }
+    ]
+  },
+  "techniques": [
+    {
+      "coreano": "Annun Sogi (extensión horizontal de puño)",
+      "espanol": "Adopción de postura de jinete con extensión horizontal del puño; preparación de la combinación rápida siguiente",
+      "categoria": "Sogi / postura",
+      "tules": {
+        "Yul-Gok": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "coreano": "Annun Sogi Ap Joomuk Kaunde Jirugi",
+      "espanol": "Puñetazo medio con puño frontal, postura de jinete",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Hwa-Rang": [
+          2,
+          3
+        ],
+        "Toi-Gye": [
+          37
+        ],
+        "Yul-Gok": [
+          2,
+          3,
+          5,
+          6
+        ]
+      }
+    },
+    {
+      "coreano": "Annun Sogi Bakat Palmok San Makgi",
+      "espanol": "Bloqueo de montaña con antebrazos externos, postura de jinete",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Toi-Gye": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      }
+    },
+    {
+      "coreano": "Annun Sogi Dung Joomuk Nopunde Yop Taerigi",
+      "espanol": "Golpe lateral alto con dorso de puño, postura de jinete",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Choong-Moo": [
+          24
+        ]
+      }
+    },
+    {
+      "coreano": "Annun Sogi Palmok Kaunde Ap Makgi",
+      "espanol": "Bloqueo frontal medio con antebrazo, postura de jinete",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          24
+        ]
+      }
+    },
+    {
+      "coreano": "Annun Sogi Sonbadak Miro Makgi",
+      "espanol": "Bloqueo medio empujando con palma, postura de jinete",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Hwa-Rang": [
+          1
+        ]
+      }
+    },
+    {
+      "coreano": "Annun Sogi Sonkal Kaunde Yop Taerigi",
+      "espanol": "Golpe lateral medio con canto de mano, postura de jinete",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Do-San": [
+          23,
+          24
+        ]
+      }
+    },
+    {
+      "coreano": "Disengage (denominación de Sonkal; sin nombre coreano indicado)",
+      "espanol": "Desenganche: giro preparatorio de puño y avance en postura de caminar",
+      "categoria": "Técnica o transición",
+      "tules": {
+        "Joong-Gun": [
+          15,
+          18
+        ]
+      }
+    },
+    {
+      "coreano": "Dwitbal Sogi Sonbadak Bandae Ollyo Makgi",
+      "espanol": "Bloqueo ascendente inverso con palma, postura de gato",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Joong-Gun": [
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "coreano": "Gojung Sogi Ap Joomuk Kaunde Jirugi",
+      "espanol": "Puñetazo medio con puño frontal, postura fija",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Hwa-Rang": [
+          6
+        ],
+        "Won-Hyo": [
+          3,
+          6,
+          15,
+          18
+        ]
+      }
+    },
+    {
+      "coreano": "Gojung Sogi Digutja Makgi",
+      "espanol": "Bloqueo en forma de “L”, postura fija",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          18
+        ],
+        "Joong-Gun": [
+          31,
+          32
+        ]
+      }
+    },
+    {
+      "coreano": "Guburyo Junbi Sogi A",
+      "espanol": "Postura de preparación para patada frontal o coz",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Choong-Moo": [
+          6
+        ],
+        "Won-Hyo": [
+          7,
+          25
+        ],
+        "Yul-Gok": [
+          22,
+          25
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi",
+      "espanol": "Adopción de postura de caminar como preparación para la patada de rodilla siguiente",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Choong-Moo": [
+          11
+        ],
+        "Toi-Gye": [
+          20
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi An Palmok Dollimyo Makgi",
+      "espanol": "Bloqueo giratorio con antebrazo interno, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Toi-Gye": [
+          32,
+          34,
+          35,
+          36
+        ],
+        "Won-Hyo": [
+          19,
+          22
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi An Palmok Kaunde Yop Makgi",
+      "espanol": "Bloqueo lateral medio con antebrazo interno, en postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Saju Makgi": [
+          2,
+          4,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi An Palmok Kaunde Yop Makgi",
+      "espanol": "Bloqueo lateral medio con antebrazo interno, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Yul-Gok": [
+          7,
+          11
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Ap Joomuk Kaunde Bandae Jirugi",
+      "espanol": "Puñetazo medio inverso con puño frontal, postura de caminar",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Choong-Moo": [
+          30
+        ],
+        "Do-San": [
+          2,
+          4,
+          10,
+          12,
+          16,
+          20
+        ],
+        "Toi-Gye": [
+          11
+        ],
+        "Won-Hyo": [
+          21,
+          24
+        ],
+        "Yul-Gok": [
+          10,
+          14,
+          33,
+          35
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+      "espanol": "Puñetazo medio directo con puño frontal, en postura de caminar",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Saju Jirugi": [
+          1,
+          3,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Ap Joomuk Kaunde Baro Jirugi",
+      "espanol": "Puñetazo medio directo con puño frontal, postura de caminar",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Chon-Ji": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          17,
+          18,
+          19
+        ],
+        "Do-San": [
+          15,
+          19
+        ],
+        "Hwa-Rang": [
+          8,
+          10,
+          13,
+          14
+        ],
+        "Toi-Gye": [
+          10
+        ],
+        "Yul-Gok": [
+          9,
+          13,
+          17,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Ap Joomuk Nopunde Bandae Jirugi",
+      "espanol": "Puñetazo alto inverso con puño frontal, postura de caminar",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Joong-Gun": [
+          16,
+          19
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Ap Joomuk Nopunde Baro Jirugi",
+      "espanol": "Puñetazo alto directo con puño frontal, postura de caminar",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Dan-Gun": [
+          2,
+          4,
+          6,
+          7,
+          8,
+          10,
+          12,
+          19,
+          21
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Ap Palkup Bandae Taerigi",
+      "espanol": "Golpe inverso con codo frontal, postura de caminar",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Yul-Gok": [
+          24,
+          27
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Bakat Palmok Chukyo Makgi",
+      "espanol": "Bloqueo ascendente con antebrazo externo, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          29
+        ],
+        "Dan-Gun": [
+          14,
+          15,
+          16,
+          17
+        ],
+        "Do-San": [
+          21,
+          22
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+      "espanol": "Bloqueo bajo con antebrazo externo, en postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Saju Jirugi": [
+          2,
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Bakat Palmok Najunde Makgi",
+      "espanol": "Bloqueo bajo con antebrazo externo, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Chon-Ji": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "Dan-Gun": [
+          5,
+          13
+        ],
+        "Hwa-Rang": [
+          9,
+          20
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Bakat Palmok Nopunde Baro Yop Makgi",
+      "espanol": "Bloqueo lateral alto directo con antebrazo externo, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Do-San": [
+          1,
+          3,
+          9,
+          11
+        ],
+        "Yul-Gok": [
+          32,
+          34
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Bakat Palmok Nopunde Hechyo Makgi",
+      "espanol": "Bloqueo alto separando con antebrazos externos, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Do-San": [
+          13,
+          17
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Doo Palmok Nopunde Makgi",
+      "espanol": "Bloqueo alto con doble antebrazo, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          23
+        ],
+        "Joong-Gun": [
+          20,
+          23
+        ],
+        "Toi-Gye": [
+          30
+        ],
+        "Yul-Gok": [
+          37,
+          38
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Doo Sonbadak Ollyo Makgi",
+      "espanol": "Bloqueo ascendente con doble palma, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          28
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Dung Joomuk Nopunde Yop Taerigi",
+      "espanol": "Golpe lateral alto con dorso de puño, postura de caminar",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Do-San": [
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Dwijibun Sonkut Najunde Bandae Tulgi",
+      "espanol": "Estocada baja inversa con punta de dedos invertida, postura de caminar",
+      "categoria": "Tulgi / estocada",
+      "tules": {
+        "Choong-Moo": [
+          20
+        ],
+        "Toi-Gye": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Kyocha Joomuk Chukyo Makgi",
+      "espanol": "Bloqueo ascendente con puño en X, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Joong-Gun": [
+          13
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Kyocha Joomuk Noollo Makgi",
+      "espanol": "Bloqueo presionante con puño en X, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Hwa-Rang": [
+          24
+        ],
+        "Toi-Gye": [
+          7
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Opun Sonkut Nopunde Tulgi",
+      "espanol": "Estocada alta con punta de dedos abierta, postura de caminar",
+      "categoria": "Tulgi / estocada",
+      "tules": {
+        "Choong-Moo": [
+          4
+        ],
+        "Toi-Gye": [
+          24,
+          27
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Sang Joomuk Dwijibo Jirugi",
+      "espanol": "Puñetazo con puño doble invertido, postura de caminar",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Joong-Gun": [
+          12
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Sang Joomuk Nopunde Sewo Jirugi",
+      "espanol": "Puñetazo vertical alto con puño doble, postura de caminar",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Joong-Gun": [
+          11
+        ],
+        "Toi-Gye": [
+          8
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Sonbadak Kaunde Bandae Golcho Makgi",
+      "espanol": "Bloqueo medio de enganche inverso con palma, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Yul-Gok": [
+          16,
+          19
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Sonbadak Kaunde Baro Golcho Makgi",
+      "espanol": "Bloqueo medio de enganche directo con palma, postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Yul-Gok": [
+          15,
+          18
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Sonkal Dung Nopunde Ap Taerigi",
+      "espanol": "Golpe frontal alto con dorso de canto de mano, postura de caminar",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Choong-Moo": [
+          13
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Sonkal Najunde Makgi",
+      "espanol": "Bloqueo bajo con canto de mano, en postura de caminar",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Saju Makgi": [
+          1,
+          3,
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Sonkal Nopunde Ap Taerigi",
+      "espanol": "Golpe frontal alto con canto de mano, postura de caminar",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Choong-Moo": [
+          2
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Sun Sonkut Tulgi",
+      "espanol": "Estocada con punta de dedos rectos, postura de caminar",
+      "categoria": "Tulgi / estocada",
+      "tules": {
+        "Choong-Moo": [
+          22
+        ],
+        "Do-San": [
+          6
+        ],
+        "Hwa-Rang": [
+          16
+        ],
+        "Won-Hyo": [
+          12
+        ],
+        "Yul-Gok": [
+          29,
+          31
+        ]
+      }
+    },
+    {
+      "coreano": "Gunnun Sogi Wi Palkup Taerigi",
+      "espanol": "Golpe ascendente con codo, postura de caminar",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Joong-Gun": [
+          8,
+          10
+        ]
+      }
+    },
+    {
+      "coreano": "Kaunde Apcha Busigi",
+      "espanol": "Patada frontal media de golpeo",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Do-San": [
+          14,
+          18
+        ],
+        "Toi-Gye": [
+          9
+        ]
+      }
+    },
+    {
+      "coreano": "Kaunde Dollyo Chagi",
+      "espanol": "Patada circular media",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Choong-Moo": [
+          17
+        ]
+      }
+    },
+    {
+      "coreano": "Kaunde Dwitcha Jirugi",
+      "espanol": "Patada hacia atrás media penetrante (coz)",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Choong-Moo": [
+          15
+        ]
+      }
+    },
+    {
+      "coreano": "Kaunde Yopcha Jirugi",
+      "espanol": "Patada lateral media penetrante",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Choong-Moo": [
+          7,
+          25,
+          26
+        ],
+        "Hwa-Rang": [
+          11
+        ],
+        "Joong-Gun": [
+          22,
+          25
+        ],
+        "Won-Hyo": [
+          8,
+          26
+        ],
+        "Yul-Gok": [
+          23,
+          26
+        ]
+      }
+    },
+    {
+      "coreano": "Kyocha Sogi Dung Joomuk Nopunde Yop Taerigi",
+      "espanol": "Golpe lateral alto con dorso de puño, postura en X",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Yul-Gok": [
+          36
+        ]
+      }
+    },
+    {
+      "coreano": "Kyocha Sogi Kyocha Joomuk Noollo Makgi",
+      "espanol": "Bloqueo presionante con puño en X, postura en X",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Toi-Gye": [
+          29
+        ]
+      }
+    },
+    {
+      "coreano": "Moa Sogi An Palmok Nopunde Yopap Makgi",
+      "espanol": "Bloqueo frontal-lateral alto con antebrazo interno, postura de pies juntos",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Hwa-Rang": [
+          26,
+          27
+        ]
+      }
+    },
+    {
+      "coreano": "Moa Sogi Dung Joomuk Yopdwi Taerigi",
+      "espanol": "Golpe lateral hacia atrás con dorso de puño, postura de pies juntos",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Toi-Gye": [
+          3,
+          6
+        ]
+      }
+    },
+    {
+      "coreano": "Moa Sogi Kiokja Jirugi",
+      "espanol": "Puñetazo en ángulo, postura de pies juntos",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Joong-Gun": [
+          30
+        ]
+      }
+    },
+    {
+      "coreano": "Moa Sogi Sang Yop Palkup Tulgi",
+      "espanol": "Estocada lateral alta con codo, postura de pies juntos",
+      "categoria": "Tulgi / estocada",
+      "tules": {
+        "Toi-Gye": [
+          12
+        ]
+      }
+    },
+    {
+      "coreano": "Moorup Ollyo Chagi",
+      "espanol": "Patada ascendente con rodilla",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Choong-Moo": [
+          12
+        ],
+        "Toi-Gye": [
+          21
+        ]
+      }
+    },
+    {
+      "coreano": "Nachuo Sogi Sonbadak Bandae Noollo Makgi",
+      "espanol": "Bloqueo presionante inverso con palma, postura baja",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Joong-Gun": [
+          27,
+          29
+        ]
+      }
+    },
+    {
+      "coreano": "Najunde Apcha Busigi",
+      "espanol": "Patada frontal baja de golpeo",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Won-Hyo": [
+          20,
+          23
+        ],
+        "Yul-Gok": [
+          8,
+          12
+        ]
+      }
+    },
+    {
+      "coreano": "Najunde Yop Apcha Busigi",
+      "espanol": "Patada frontal lateral baja de golpeo",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Joong-Gun": [
+          2,
+          5
+        ],
+        "Toi-Gye": [
+          23,
+          26
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi An Palmok Kaunde Yop Makgi",
+      "espanol": "Bloqueo lateral medio con antebrazo interno, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Chon-Ji": [
+          9,
+          11,
+          13,
+          15
+        ],
+        "Toi-Gye": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Ap Joomuk Kaunde Bandae Jirugi",
+      "espanol": "Puñetazo medio inverso con puño frontal, postura en L",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Joong-Gun": [
+          21,
+          24
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Ap Joomuk Kaunde Baro Jirugi",
+      "espanol": "Puñetazo medio directo con puño frontal, postura en L",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Hwa-Rang": [
+          21,
+          22,
+          23
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Ap Joomuk Ollyo Jirugi",
+      "espanol": "Puñetazo ascendente con puño frontal, postura en L",
+      "categoria": "Jirugi / puñetazo o ataque de puño",
+      "tules": {
+        "Hwa-Rang": [
+          5
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Bakat Palmok Najunde Makgi",
+      "espanol": "Bloqueo bajo con antebrazo externo, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          10
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Doo Palmok Najunde Miro Makgi",
+      "espanol": "Bloqueo bajo empujando con doble antebrazo, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Toi-Gye": [
+          19
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Dung Joomuk Nopunde Yop Taerigi",
+      "espanol": "Golpe lateral alto con dorso de puño, postura en L",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Joong-Gun": [
+          14,
+          17
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Dung Joomuk Nopunde Yopdwi Taerigi",
+      "espanol": "Golpe lateral hacia atrás alto con dorso de puño, postura en L",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Choong-Moo": [
+          21
+        ],
+        "Toi-Gye": [
+          28
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Kyocha Sonkal Kaunde Momcho Makgi",
+      "espanol": "Bloqueo de comprobación medio con canto de mano en X, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          27
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Palmok Kaunde Daebi Makgi",
+      "espanol": "Bloqueo de guardia medio con antebrazo, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          16
+        ],
+        "Joong-Gun": [
+          26,
+          28
+        ],
+        "Won-Hyo": [
+          27,
+          28
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Sang Palmok Makgi",
+      "espanol": "Bloqueo doble con antebrazos, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Dan-Gun": [
+          9,
+          11
+        ],
+        "Hwa-Rang": [
+          4
+        ],
+        "Won-Hyo": [
+          1,
+          4,
+          13,
+          16
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Sang Sonkal Makgi",
+      "espanol": "Bloqueo doble con cantos de mano, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          1
+        ],
+        "Yul-Gok": [
+          28,
+          30
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Sonkal Dung Kaunde Bakuro Makgi",
+      "espanol": "Bloqueo medio hacia afuera con dorso de canto de mano, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Joong-Gun": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Sonkal Kaunde Daebi Makgi",
+      "espanol": "Bloqueo de guardia medio con canto de mano, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Choong-Moo": [
+          3,
+          5,
+          8,
+          9,
+          19
+        ],
+        "Dan-Gun": [
+          1,
+          3
+        ],
+        "Do-San": [
+          5
+        ],
+        "Hwa-Rang": [
+          15,
+          17,
+          19,
+          28,
+          29
+        ],
+        "Joong-Gun": [
+          7,
+          9
+        ],
+        "Toi-Gye": [
+          22,
+          25
+        ],
+        "Won-Hyo": [
+          9,
+          10,
+          11
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Sonkal Kaunde Yop Taerigi",
+      "espanol": "Golpe lateral medio con canto de mano, postura en L",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Dan-Gun": [
+          18,
+          20
+        ],
+        "Hwa-Rang": [
+          12
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Sonkal Najunde Daebi Makgi",
+      "espanol": "Bloqueo de guardia bajo con canto de mano, postura en L",
+      "categoria": "Makgi / bloqueo o defensa",
+      "tules": {
+        "Toi-Gye": [
+          31,
+          33
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Sonkal Nopunde Anuro Taerigi",
+      "espanol": "Golpe alto hacia adentro con canto de mano, postura en L",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Won-Hyo": [
+          2,
+          5,
+          14,
+          17
+        ]
+      }
+    },
+    {
+      "coreano": "Niunja Sogi Yop Palkup Tulgi",
+      "espanol": "Estocada lateral con codo, postura en L",
+      "categoria": "Tulgi / estocada",
+      "tules": {
+        "Hwa-Rang": [
+          25
+        ]
+      }
+    },
+    {
+      "coreano": "Nopunde Dollyo Chagi",
+      "espanol": "Patada circular alta",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Choong-Moo": [
+          14
+        ],
+        "Hwa-Rang": [
+          18,
+          19
+        ]
+      }
+    },
+    {
+      "coreano": "Soojik Sogi Sonkal Naeryo Taerigi",
+      "espanol": "Golpe descendente con canto de mano, postura vertical",
+      "categoria": "Taerigi / golpe",
+      "tules": {
+        "Hwa-Rang": [
+          7
+        ]
+      }
+    },
+    {
+      "coreano": "Twimyo Yopcha Jirugi",
+      "espanol": "Patada lateral media penetrante en salto",
+      "categoria": "Chagi / patada",
+      "tules": {
+        "Choong-Moo": [
+          9
+        ]
+      }
+    }
+  ]
+}
