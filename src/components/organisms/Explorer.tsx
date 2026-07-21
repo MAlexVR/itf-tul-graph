@@ -4,26 +4,37 @@ import { useMemo, useState } from "react";
 import { Badge } from "@/components/atoms/Badge";
 import { SelectField } from "@/components/atoms/SelectField";
 import { StatCard } from "@/components/atoms/StatCard";
+import { CategoryCard } from "@/components/molecules/CategoryCard";
 import { PatternCard } from "@/components/molecules/PatternCard";
 import { TechniqueRow } from "@/components/molecules/TechniqueRow";
 import { patternDetails } from "@/lib/pattern-details";
 import type { GraphData, Language, Movement } from "@/lib/types";
 
 const all = "__all__";
+const other = "__other__";
+const categoryGroups = [
+  { value: "Makgi / bloqueo o defensa", label: "Makgi / defensa", tone: "defense" },
+  { value: "Jirugi / puñetazo o ataque de puño", label: "Jirugi / ataque de puño", tone: "punch" },
+  { value: "Taerigi / golpe", label: "Taerigi / golpe", tone: "strike" },
+  { value: "Tulgi / estocada", label: "Tulgi / estocada", tone: "thrust" },
+  { value: "Chagi / patada", label: "Chagi / patada", tone: "kick" },
+  { value: other, label: "Otra técnica o transición", tone: "other" },
+] as const;
 function techniqueKey(item: Pick<Movement, "coreano" | "espanol">) { return `${item.coreano}\u0000${item.espanol}`; }
 function display(item: Pick<Movement, "coreano" | "espanol">, language: Language) { return language === "korean" ? item.coreano : language === "spanish" ? item.espanol : `${item.coreano} — ${item.espanol}`; }
+function matchesCategory(item: Pick<Movement, "categoria">, value: string) { return value === all || (value === other ? !categoryGroups.slice(0, 5).some((group) => group.value === item.categoria) : item.categoria === value); }
 
 export function Explorer({ data }: { data: GraphData }) {
   const [tul, setTul] = useState("Chon-Ji");
   const [category, setCategory] = useState(all);
   const [technique, setTechnique] = useState(all);
   const [language, setLanguage] = useState<Language>("both");
-  const categories = useMemo(() => [...new Set(data.techniques.map((item) => item.categoria))].sort((a, b) => a.localeCompare(b, "es")), [data]);
+  const categoryCounts = useMemo(() => Object.fromEntries(categoryGroups.map((group) => [group.value, data.techniques.filter((item) => matchesCategory(item, group.value)).length])), [data]);
   const basicCount = data.tules.filter((name) => name.startsWith("Saju ")).length;
   const tulCount = data.tules.length - basicCount;
   const movementCount = Object.values(data.sequences).flat().length;
   const selected = data.sequences[tul] ?? [];
-  const visible = selected.filter((item) => (category === all || item.categoria === category) && (technique === all || techniqueKey(item) === technique));
+  const visible = selected.filter((item) => matchesCategory(item, category) && (technique === all || techniqueKey(item) === technique));
   const detail = patternDetails[tul];
   const stance = data.stances[tul];
   const clear = () => { setCategory(all); setTechnique(all); };
@@ -40,11 +51,15 @@ export function Explorer({ data }: { data: GraphData }) {
       <div className="filter-heading"><strong>Explora paso a paso</strong><span>Elige opciones de las listas; el contenido se adapta automáticamente.</span></div>
       <div className="filter-grid">
         <SelectField label="Figura o tul" value={tul} onChange={(event) => { setTul(event.target.value); clear(); }}>{data.tules.map((name) => <option key={name}>{name}</option>)}</SelectField>
-        <SelectField label="Tipo técnico" value={category} onChange={(event) => { setCategory(event.target.value); setTechnique(all); }}><option value={all}>Todos los tipos</option>{categories.map((name) => <option key={name}>{name}</option>)}</SelectField>
-        <SelectField label="Técnica" value={technique} onChange={(event) => setTechnique(event.target.value)}><option value={all}>Todas las técnicas</option>{data.techniques.filter((item) => category === all || item.categoria === category).map((item) => <option key={techniqueKey(item)} value={techniqueKey(item)}>{display(item, language)}</option>)}</SelectField>
+        <SelectField label="Tipo técnico" value={category} onChange={(event) => { setCategory(event.target.value); setTechnique(all); }}><option value={all}>Todos los tipos</option>{categoryGroups.map((group) => <option key={group.value} value={group.value}>{group.label}</option>)}</SelectField>
+        <SelectField label="Técnica" value={technique} onChange={(event) => setTechnique(event.target.value)}><option value={all}>Todas las técnicas</option>{data.techniques.filter((item) => matchesCategory(item, category)).map((item) => <option key={techniqueKey(item)} value={techniqueKey(item)}>{display(item, language)}</option>)}</SelectField>
         <SelectField label="Terminología" value={language} onChange={(event) => setLanguage(event.target.value as Language)}><option value="both">Coreano y español</option><option value="korean">Solo coreano</option><option value="spanish">Solo español</option></SelectField>
       </div>
       <button className="clear-button" onClick={clear}>Restablecer filtros</button>
+    </section>
+
+    <section className="category-cards" aria-label="Resumen por tipo técnico">
+      {categoryGroups.map((group) => <CategoryCard key={group.value} label={group.label} count={categoryCounts[group.value]} tone={group.tone} active={category === group.value} onClick={() => { setCategory(group.value); setTechnique(all); }} />)}
     </section>
 
     <section className="workspace">

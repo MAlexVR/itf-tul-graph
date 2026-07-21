@@ -13,6 +13,9 @@ Taekwon-Do ITF desde Saju Jirugi hasta Choong-Moo.
 - 2 figuras básicas, 9 tules, 273 movimientos y 78 técnicas canónicas.
 - Filtros desplegables para figura, tipo técnico, técnica y terminología
   (coreano, español o ambos), pensados para aprendizaje guiado.
+- Tarjetas interactivas de categoría con el conteo de técnicas canónicas:
+  Makgi/defensa, Jirugi/ataque de puño, Taerigi/golpe, Tulgi/estocada,
+  Chagi/patada y otras técnicas o transiciones.
 - Secuencias numeradas, posturas completas de inicio/finalización y colores por
   familia técnica: defensa, puñetazo, golpe, estocada, patada u otra.
 - Significados oficiales de cada figura según el **Manual de Teoría y Programa
