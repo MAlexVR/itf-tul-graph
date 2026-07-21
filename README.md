@@ -58,6 +58,14 @@ npm run build
 `npm run build` genera el sitio en `out/`. El flujo de GitHub Actions lo
 publica en GitHub Pages al hacer push a `main`.
 
+### Vercel
+
+El proyecto está listo para importarse directamente en Vercel: detecte el
+framework **Next.js**, conserve los comandos predeterminados (`npm run build` y
+`next start`) y no defina variables de entorno. El favicon propio está en
+`src/app/icon.svg`; Next.js lo sirve automáticamente en desarrollo, producción
+y despliegues de Vercel.
+
 ## Alcance y fuentes
 
 La terminología técnica en español se normalizó conforme al manual de la
