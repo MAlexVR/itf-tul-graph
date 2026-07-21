@@ -4,6 +4,7 @@ import type { GraphData, Language, Movement, Stance, Technique } from "@/lib/typ
 
 type TechniqueNode = Movement & { numbers: number[] };
 type GraphFilters = { category: string; technique: string };
+type Point = { x: number; y: number };
 const all = "__all__";
 const other = "__other__";
 const palette = ["#dc2626", "#ea580c", "#ca8a04", "#16a34a", "#0891b2", "#2563eb", "#4f46e5", "#7c3aed", "#c026d3", "#db2777", "#be123c"];
@@ -44,19 +45,43 @@ function InteractiveGraphCanvas({ label, children }: { label: string; children: 
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const dragStart = useRef<{ x: number; y: number; panX: number; panY: number } | null>(null);
+  const pointers = useRef(new Map<number, Point>());
+  const pinchStart = useRef<{ distance: number; zoom: number } | null>(null);
   const reset = () => { setZoom(1); setPan({ x: 0, y: 0 }); };
 
-  const zoomBy = (amount: number) => setZoom((current) => Math.min(2.4, Math.max(0.55, Number((current + amount).toFixed(2)))));
+  const limitZoom = (value: number) => Math.min(2.4, Math.max(0.55, Number(value.toFixed(2))));
+  const pointerDistance = () => {
+    const [first, second] = Array.from(pointers.current.values());
+    return first && second ? Math.hypot(second.x - first.x, second.y - first.y) : 0;
+  };
+  const zoomBy = (amount: number) => setZoom((current) => limitZoom(current + amount));
   const startPan = (event: ReactPointerEvent<HTMLDivElement>) => {
     if (event.button !== 0 && event.pointerType === "mouse") return;
     event.currentTarget.setPointerCapture(event.pointerId);
+    pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (pointers.current.size === 2) {
+      pinchStart.current = { distance: pointerDistance(), zoom };
+      dragStart.current = null;
+      return;
+    }
     dragStart.current = { x: event.clientX, y: event.clientY, panX: pan.x, panY: pan.y };
   };
   const movePan = (event: ReactPointerEvent<HTMLDivElement>) => {
+    if (pointers.current.has(event.pointerId)) pointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (pinchStart.current && pointers.current.size >= 2) {
+      const distance = pointerDistance();
+      if (distance > 0) setZoom(limitZoom(pinchStart.current.zoom * distance / pinchStart.current.distance));
+      return;
+    }
     if (!dragStart.current) return;
     setPan({ x: dragStart.current.panX + event.clientX - dragStart.current.x, y: dragStart.current.panY + event.clientY - dragStart.current.y });
   };
-  const stopPan = () => { dragStart.current = null; };
+  const stopPan = (event: ReactPointerEvent<HTMLDivElement>) => {
+    pointers.current.delete(event.pointerId);
+    pinchStart.current = null;
+    const remaining = Array.from(pointers.current.values())[0];
+    dragStart.current = remaining ? { x: remaining.x, y: remaining.y, panX: pan.x, panY: pan.y } : null;
+  };
   const zoomWithWheel = (event: WheelEvent<HTMLDivElement>) => {
     event.preventDefault();
     zoomBy(event.deltaY < 0 ? 0.1 : -0.1);
@@ -69,7 +94,7 @@ function InteractiveGraphCanvas({ label, children }: { label: string; children: 
       <button type="button" onClick={() => zoomBy(0.15)} aria-label="Acercar">+</button>
       <button type="button" className="graph-reset" onClick={reset}>Restaurar</button>
     </div>
-    <div className="graph-viewport" role="region" aria-label={`${label}. Arrastra para desplazarte; usa la rueda para acercar o alejar y los controles para restaurar.`} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={stopPan} onPointerCancel={stopPan} onWheel={zoomWithWheel}>
+    <div className="graph-viewport" role="region" aria-label={`${label}. Arrastra con un dedo para desplazarte; usa dos dedos para acercar o alejar, o la rueda y los controles para restaurar.`} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={stopPan} onPointerCancel={stopPan} onWheel={zoomWithWheel}>
       <div className="graph-canvas" style={{ transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})` }}>{children}</div>
     </div>
   </div>;
