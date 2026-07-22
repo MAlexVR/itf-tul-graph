@@ -8,21 +8,13 @@ import { CategoryCard } from "@/components/molecules/CategoryCard";
 import { PatternCard } from "@/components/molecules/PatternCard";
 import { TechniqueRow } from "@/components/molecules/TechniqueRow";
 import { GlobalGraphView, GraphView } from "@/components/organisms/GraphView";
+import { ALL_CATEGORIES as all, categoryGroups as knownCategoryGroups, categoryMatchesFilter, otherCategoryGroup } from "@/lib/categories";
 import { patternDetails } from "@/lib/pattern-details";
 import type { GraphData, Language, Movement, MovementTechnique } from "@/lib/types";
 
-const all = "__all__";
-const other = "__other__";
-const categoryGroups = [
-  { value: "Makgi / bloqueo o defensa", label: "Makgi / defensa", tone: "defense" },
-  { value: "Jirugi / puñetazo o ataque de puño", label: "Jirugi / ataque de puño", tone: "punch" },
-  { value: "Taerigi / golpe", label: "Taerigi / golpe", tone: "strike" },
-  { value: "Tulgi / estocada", label: "Tulgi / estocada", tone: "thrust" },
-  { value: "Chagi / patada", label: "Chagi / patada", tone: "kick" },
-  { value: other, label: "Otra técnica o transición", tone: "other" },
-] as const;
+const categoryGroups = [...knownCategoryGroups, otherCategoryGroup];
 function movementTechniques(item: Movement): MovementTechnique[] { return item.tecnicas?.length ? item.tecnicas : [item]; }
-function matchesCategory(item: Movement, value: string) { return value === all || movementTechniques(item).some((entry) => value === other ? !categoryGroups.slice(0, 5).some((group) => group.value === entry.categoria) : entry.categoria === value); }
+function matchesCategory(item: Movement, value: string) { return value === all || movementTechniques(item).some((entry) => categoryMatchesFilter(entry.categoria, value)); }
 function uniqueTechniques(movements: Movement[]) { return Array.from(new Map(movements.flatMap((item) => movementTechniques(item)).map((item) => [`${item.coreano}\u0000${item.espanol}`, item])).values()); }
 
 export function Explorer({ data }: { data: GraphData }) {

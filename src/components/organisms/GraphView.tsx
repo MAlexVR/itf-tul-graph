@@ -1,12 +1,10 @@
 import { useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode, type WheelEvent } from "react";
-import { categoryClass } from "@/components/molecules/TechniqueRow";
+import { ALL_CATEGORIES as all, categoryClass, categoryMatchesFilter } from "@/lib/categories";
 import type { GraphData, Language, Movement, Stance, Technique } from "@/lib/types";
 
 type TechniqueNode = Movement & { numbers: number[] };
 type GraphFilters = { category: string; technique: string };
 type Point = { x: number; y: number };
-const all = "__all__";
-const other = "__other__";
 const palette = ["#2563eb", "#d97706", "#059669", "#dc2626", "#7c3aed", "#0891b2", "#65a30d", "#db2777", "#4f46e5", "#ea580c", "#0d9488"];
 
 function textFor(item: Pick<Movement, "coreano" | "espanol">, language: Language) {
@@ -31,9 +29,7 @@ function SvgText({ value, x, y, width, className = "" }: { value: string; x: num
 }
 
 function matches(technique: Pick<Technique, "categoria" | "coreano" | "espanol">, filters: GraphFilters) {
-  const categoryMatches = filters.category === all || (filters.category === other
-    ? !["Makgi / bloqueo o defensa", "Jirugi / puñetazo o ataque de puño", "Taerigi / golpe", "Tulgi / estocada", "Chagi / patada"].includes(technique.categoria)
-    : technique.categoria === filters.category);
+  const categoryMatches = categoryMatchesFilter(technique.categoria, filters.category);
   return categoryMatches && (filters.technique === all || filters.technique === `${technique.coreano}\u0000${technique.espanol}`);
 }
 
