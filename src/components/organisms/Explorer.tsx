@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Badge } from "@/components/atoms/Badge";
 import { SelectField } from "@/components/atoms/SelectField";
 import { StatCard } from "@/components/atoms/StatCard";
@@ -35,6 +35,11 @@ export function Explorer({ data }: { data: GraphData }) {
   const detail = patternDetails[tul];
   const stance = data.stances[tul];
   const clear = () => { setCategory(all); };
+  const navRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const active = navRef.current?.querySelector<HTMLElement>(".pattern-card--active, .global-graph-button--active");
+    active?.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
+  }, [tul, graphScope]);
 
   return <main className="shell">
     <section className="hero" aria-labelledby="title">
@@ -59,7 +64,7 @@ export function Explorer({ data }: { data: GraphData }) {
     </section>
 
     <section className="workspace">
-      <nav className="pattern-nav" aria-label="Ruta pedagógica"><div className="section-label">Ruta pedagógica</div><button className={`pattern-card global-graph-button ${view === "graph" && graphScope === "global" ? "global-graph-button--active" : ""}`} onClick={() => { setView("graph"); setGraphScope("global"); }} aria-pressed={view === "graph" && graphScope === "global"}><span>Grafo global</span><span>Vista completa</span></button>{data.tules.map((name) => <PatternCard key={name} name={name} movements={data.movement_sequences[name].length} active={name === tul && graphScope === "selected"} onClick={() => { setTul(name); clear(); setView("graph"); setGraphScope("selected"); }} />)}</nav>
+      <nav ref={navRef} className="pattern-nav" aria-label="Ruta pedagógica"><div className="section-label">Ruta pedagógica</div><button className={`pattern-card global-graph-button ${view === "graph" && graphScope === "global" ? "global-graph-button--active" : ""}`} onClick={() => { setView("graph"); setGraphScope("global"); }} aria-pressed={view === "graph" && graphScope === "global"}><span>Grafo global</span><span>Vista completa</span></button>{data.tules.map((name) => <PatternCard key={name} name={name} movements={data.movement_sequences[name].length} active={name === tul && graphScope === "selected"} onClick={() => { setTul(name); clear(); setView("graph"); setGraphScope("selected"); }} />)}</nav>
       <article className="detail-panel">
         {graphScope === "global" ? <header className="pattern-header"><div><Badge tone="slate">Vista de conjunto</Badge><h2>Grafo global</h2></div><span className="visible-count">{data.tules.length} patrones técnicos: figuras y tules</span></header> : <><header className="pattern-header"><div><Badge tone={detail?.kind === "Figura básica" ? "blue" : "gold"}>{detail?.kind ?? "Tul"}</Badge><h2>{tul}</h2></div><span className="visible-count">{visible.length} de {selected.length} movimientos visibles</span></header><div className="meaning-card"><span className="eyebrow">Significado</span><p>{detail?.meaning}</p><small>{detail?.historicalNote}</small></div><div className="view-switch" role="tablist" aria-label="Vista de la figura seleccionada"><button role="tab" aria-selected={view === "graph"} className={view === "graph" ? "view-switch--active" : ""} onClick={() => setView("graph")}>Grafo de {tul}</button><button role="tab" aria-selected={view === "sequence"} className={view === "sequence" ? "view-switch--active" : ""} onClick={() => setView("sequence")}>Secuencia</button></div></>}
         {view === "graph" ? graphScope === "global" ? <GlobalGraphView data={data} filters={{ category, technique: all }} language={language} /> : <GraphView tul={tul} movements={visibleRelationships} stance={stance} language={language} /> : <><div className="stance-flow"><div><span>Inicio</span><strong>{stance.inicio_detalle}</strong></div><i aria-hidden="true">↓</i><div><span>Finalización</span><strong>{stance.final_detalle}</strong></div></div><div className="legend"><span className="legend-item legend-item--defense">Defensa</span><span className="legend-item legend-item--punch">Puñetazo</span><span className="legend-item legend-item--strike">Golpe</span><span className="legend-item legend-item--thrust">Estocada</span><span className="legend-item legend-item--kick">Patada</span><span className="legend-item legend-item--other">Otra</span></div><section><div className="sequence-heading"><div><span className="eyebrow">Secuencia</span><h3>Movimientos en orden</h3></div><span>Los números conservan el orden original aun al filtrar.</span></div>{visible.length ? <ol className="technique-list">{visible.map((movement) => <TechniqueRow key={movement.movimiento} movement={movement} language={language} techniques={movementTechniques(movement).filter((entry) => matchesCategory({ ...movement, tecnicas: [entry] }, category))} />)}</ol> : <div className="empty-state">No hay movimientos que correspondan a esta combinación de filtros. <button onClick={clear}>Ver todos</button></div>}</section></>}

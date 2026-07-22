@@ -5,7 +5,7 @@ import type { GraphData, Language, Movement, Stance, Technique } from "@/lib/typ
 type TechniqueNode = Movement & { numbers: number[] };
 type GraphFilters = { category: string; technique: string };
 type Point = { x: number; y: number };
-const palette = ["#2563eb", "#d97706", "#059669", "#dc2626", "#7c3aed", "#0891b2", "#65a30d", "#db2777", "#4f46e5", "#ea580c", "#0d9488"];
+const palette = ["#2d2d83", "#e0a01a", "#008c36", "#e10c1b", "#4a3aa7", "#0e7490", "#65a30d", "#be185d", "#4444ab", "#c2410c", "#0f766e"];
 
 function textFor(item: Pick<Movement, "coreano" | "espanol">, language: Language) {
   return language === "korean" ? item.coreano : language === "spanish" ? item.espanol : `${item.coreano} — ${item.espanol}`;
@@ -33,17 +33,18 @@ function matches(technique: Pick<Technique, "categoria" | "coreano" | "espanol">
   return categoryMatches && (filters.technique === all || filters.technique === `${technique.coreano}\u0000${technique.espanol}`);
 }
 
-function InteractiveGraph({ id, label, children }: { id: string; label: string; children: ReactNode }) {
-  return <InteractiveGraphCanvas key={id} label={label}>{children}</InteractiveGraphCanvas>;
+function InteractiveGraph({ id, label, initialPan, children }: { id: string; label: string; initialPan?: Point; children: ReactNode }) {
+  return <InteractiveGraphCanvas key={id} label={label} initialPan={initialPan}>{children}</InteractiveGraphCanvas>;
 }
 
-function InteractiveGraphCanvas({ label, children }: { label: string; children: ReactNode }) {
+function InteractiveGraphCanvas({ label, initialPan, children }: { label: string; initialPan?: Point; children: ReactNode }) {
+  const home = initialPan ?? { x: 0, y: 0 };
   const [zoom, setZoom] = useState(1);
-  const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [pan, setPan] = useState(home);
   const dragStart = useRef<{ x: number; y: number; panX: number; panY: number } | null>(null);
   const pointers = useRef(new Map<number, Point>());
   const pinchStart = useRef<{ distance: number; zoom: number } | null>(null);
-  const reset = () => { setZoom(1); setPan({ x: 0, y: 0 }); };
+  const reset = () => { setZoom(1); setPan(home); };
 
   const limitZoom = (value: number) => Math.min(2.4, Math.max(0.3, Number(value.toFixed(2))));
   const pointerDistance = () => {
@@ -111,10 +112,15 @@ export function GraphView({ tul, movements, stance, language }: { tul: string; m
   const endY = firstTechniqueY + Math.max(nodes.length - 1, 0) * techniqueGap + 112;
   const height = Math.max(410, endY + 70);
   const centerY = height / 2;
+  // .technique-graph has a fixed min-width of 1180px in globals.css regardless of viewport,
+  // so the canvas always renders at that width; start panned so the technique column
+  // (which sits past the halfway point of the 1020-wide viewBox) is visible on load
+  // instead of the empty margin to its left.
+  const initialPan = { x: -(techniqueX * (1180 / 1020)) + 28, y: 0 };
 
   return <section className="graph-panel" aria-label={`Grafo de relaciones de ${tul}`}>
     <div className="graph-intro"><div><span className="eyebrow">Grafo de una figura</span><h3>Relaciones técnicas de {tul}</h3></div><span>Inicio y finalización son contexto: se muestran aquí, pero no son movimientos ni nodos técnicos.</span></div>
-    <InteractiveGraph id={`${tul}-${nodes.length}`} label={`Grafo de relaciones de ${tul}`}><svg className="technique-graph" viewBox={`0 0 1020 ${height}`} role="img" aria-label={`Relaciones entre ${tul}, sus posturas y técnicas`}>
+    <InteractiveGraph id={`${tul}-${nodes.length}`} label={`Grafo de relaciones de ${tul}`} initialPan={initialPan}><svg className="technique-graph" viewBox={`0 0 1020 ${height}`} role="img" aria-label={`Relaciones entre ${tul}, sus posturas y técnicas`}>
       <defs><marker id="graph-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#697991" /></marker></defs>
       <text className="graph-context-label" x={techniqueX} y="26">Contexto de secuencia — no se contabiliza como movimiento</text>
       <g className="graph-stance graph-stance--context"><rect x={techniqueX} y={startY - 38} width={techniqueWidth} height="76" rx="12" /><SvgText value={`Inicio: ${stance.inicio_detalle}`} x={techniqueX + techniqueWidth / 2} y={startY} width={72} /></g>
