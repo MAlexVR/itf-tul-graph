@@ -231,7 +231,7 @@
       {
         "movimiento": 6,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada"
       },
       {
@@ -1489,7 +1489,7 @@
       {
         "movimiento": 7,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada"
       },
       {
@@ -1597,7 +1597,7 @@
       {
         "movimiento": 25,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada"
       },
       {
@@ -1749,7 +1749,7 @@
       {
         "movimiento": 22,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada"
       },
       {
@@ -1767,7 +1767,7 @@
       {
         "movimiento": 25,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada"
       },
       {
@@ -2169,12 +2169,12 @@
       {
         "movimiento": 6,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada",
         "tecnicas": [
           {
             "coreano": "Guburyo Junbi Sogi A",
-            "espanol": "Postura de preparación para patada frontal o coz",
+            "espanol": "Postura de preparación para sacar patada lateral",
             "categoria": "Chagi / patada"
           }
         ]
@@ -4852,12 +4852,12 @@
       {
         "movimiento": 7,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada",
         "tecnicas": [
           {
             "coreano": "Guburyo Junbi Sogi A",
-            "espanol": "Postura de preparación para patada frontal o coz",
+            "espanol": "Postura de preparación para sacar patada lateral",
             "categoria": "Chagi / patada"
           }
         ]
@@ -5086,12 +5086,12 @@
       {
         "movimiento": 25,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada",
         "tecnicas": [
           {
             "coreano": "Guburyo Junbi Sogi A",
-            "espanol": "Postura de preparación para patada frontal o coz",
+            "espanol": "Postura de preparación para sacar patada lateral",
             "categoria": "Chagi / patada"
           }
         ]
@@ -5413,12 +5413,12 @@
       {
         "movimiento": 22,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada",
         "tecnicas": [
           {
             "coreano": "Guburyo Junbi Sogi A",
-            "espanol": "Postura de preparación para patada frontal o coz",
+            "espanol": "Postura de preparación para sacar patada lateral",
             "categoria": "Chagi / patada"
           }
         ]
@@ -5452,12 +5452,12 @@
       {
         "movimiento": 25,
         "coreano": "Guburyo Junbi Sogi A",
-        "espanol": "Postura de preparación para patada frontal o coz",
+        "espanol": "Postura de preparación para sacar patada lateral",
         "categoria": "Chagi / patada",
         "tecnicas": [
           {
             "coreano": "Guburyo Junbi Sogi A",
-            "espanol": "Postura de preparación para patada frontal o coz",
+            "espanol": "Postura de preparación para sacar patada lateral",
             "categoria": "Chagi / patada"
           }
         ]
@@ -5775,7 +5775,7 @@
     },
     {
       "coreano": "Guburyo Junbi Sogi A",
-      "espanol": "Postura de preparación para patada frontal o coz",
+      "espanol": "Postura de preparación para sacar patada lateral",
       "categoria": "Chagi / patada",
       "tules": {
         "Choong-Moo": [
