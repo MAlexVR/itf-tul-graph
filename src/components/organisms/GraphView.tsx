@@ -1,4 +1,4 @@
-import { useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode, type WheelEvent } from "react";
+import { useLayoutEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode, type WheelEvent } from "react";
 import { ALL_CATEGORIES as all, categoryClass, categoryMatchesFilter } from "@/lib/categories";
 import type { GraphData, Language, Movement, Stance, Technique } from "@/lib/types";
 
@@ -33,18 +33,49 @@ function matches(technique: Pick<Technique, "categoria" | "coreano" | "espanol">
   return categoryMatches && (filters.technique === all || filters.technique === `${technique.coreano}\u0000${technique.espanol}`);
 }
 
-function InteractiveGraph({ id, label, initialPan, children }: { id: string; label: string; initialPan?: Point; children: ReactNode }) {
-  return <InteractiveGraphCanvas key={id} label={label} initialPan={initialPan}>{children}</InteractiveGraphCanvas>;
+function InteractiveGraph({ id, label, children }: { id: string; label: string; children: ReactNode }) {
+  return <InteractiveGraphCanvas key={id} label={label}>{children}</InteractiveGraphCanvas>;
 }
 
-function InteractiveGraphCanvas({ label, initialPan, children }: { label: string; initialPan?: Point; children: ReactNode }) {
-  const home = initialPan ?? { x: 0, y: 0 };
+function InteractiveGraphCanvas({ label, children }: { label: string; children: ReactNode }) {
   const [zoom, setZoom] = useState(1);
-  const [pan, setPan] = useState(home);
+  const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [baseScale, setBaseScale] = useState(1);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const canvasRef = useRef<HTMLDivElement>(null);
   const dragStart = useRef<{ x: number; y: number; panX: number; panY: number } | null>(null);
   const pointers = useRef(new Map<number, Point>());
   const pinchStart = useRef<{ distance: number; zoom: number } | null>(null);
-  const reset = () => { setZoom(1); setPan(home); };
+
+  // Fits the graph's natural width (unaffected by the current transform) to the
+  // viewport and centers it horizontally, so "100%" always shows the graph
+  // centered instead of a native-scale slice cut off to one side. Graphs taller
+  // than the viewport still need vertical panning (by design, via drag/pinch) —
+  // fitting the full height too would shrink tall graphs to an unreadable size.
+  const fitToView = () => {
+    const viewport = viewportRef.current;
+    const canvas = canvasRef.current;
+    if (!viewport || !canvas || !canvas.offsetWidth || !canvas.offsetHeight) return null;
+    const scale = Math.min(viewport.clientWidth / canvas.offsetWidth, 1);
+    const x = (viewport.clientWidth - canvas.offsetWidth * scale) / 2;
+    const scaledHeight = canvas.offsetHeight * scale;
+    const y = scaledHeight <= viewport.clientHeight ? (viewport.clientHeight - scaledHeight) / 2 : 0;
+    return { scale, pan: { x, y } };
+  };
+  const applyFit = () => {
+    const fit = fitToView();
+    if (fit) { setBaseScale(fit.scale); setPan(fit.pan); }
+  };
+  const reset = () => { setZoom(1); applyFit(); };
+
+  useLayoutEffect(() => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+    const observer = new ResizeObserver(() => applyFit());
+    observer.observe(viewport);
+    return () => observer.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const limitZoom = (value: number) => Math.min(2.4, Math.max(0.3, Number(value.toFixed(2))));
   const pointerDistance = () => {
@@ -91,8 +122,8 @@ function InteractiveGraphCanvas({ label, initialPan, children }: { label: string
       <button type="button" onClick={() => zoomBy(0.15)} aria-label="Acercar">+</button>
       <button type="button" className="graph-reset" onClick={reset}>Restaurar</button>
     </div>
-    <div className="graph-viewport" role="region" aria-label={`${label}. Arrastra con un dedo para desplazarte; usa dos dedos para acercar o alejar, o la rueda y los controles para restaurar.`} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={stopPan} onPointerCancel={stopPan} onWheel={zoomWithWheel}>
-      <div className="graph-canvas" style={{ transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})` }}>{children}</div>
+    <div className="graph-viewport" ref={viewportRef} role="region" aria-label={`${label}. Arrastra con un dedo para desplazarte; usa dos dedos para acercar o alejar, o la rueda y los controles para restaurar.`} onPointerDown={startPan} onPointerMove={movePan} onPointerUp={stopPan} onPointerCancel={stopPan} onWheel={zoomWithWheel}>
+      <div className="graph-canvas" ref={canvasRef} style={{ transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom * baseScale})` }}>{children}</div>
     </div>
   </div>;
 }
@@ -112,17 +143,11 @@ export function GraphView({ tul, movements, stance, language }: { tul: string; m
   const endY = firstTechniqueY + Math.max(nodes.length - 1, 0) * techniqueGap + 112;
   const height = Math.max(410, endY + 70);
   const centerY = height / 2;
-  // .technique-graph has a fixed min-width of 1180px in globals.css regardless of viewport,
-  // so the canvas always renders at that width; start panned so the technique column
-  // (which sits past the halfway point of the 1020-wide viewBox) is visible on load
-  // instead of the empty margin to its left.
-  const initialPan = { x: -(techniqueX * (1180 / 1020)) + 28, y: 0 };
 
   return <section className="graph-panel" aria-label={`Grafo de relaciones de ${tul}`}>
     <div className="graph-intro"><div><span className="eyebrow">Grafo de una figura</span><h3>Relaciones técnicas de {tul}</h3></div><span>Inicio y finalización son contexto: se muestran aquí, pero no son movimientos ni nodos técnicos.</span></div>
-    <InteractiveGraph id={`${tul}-${nodes.length}`} label={`Grafo de relaciones de ${tul}`} initialPan={initialPan}><svg className="technique-graph" viewBox={`0 0 1020 ${height}`} role="img" aria-label={`Relaciones entre ${tul}, sus posturas y técnicas`}>
+    <InteractiveGraph id={`${tul}-${nodes.length}`} label={`Grafo de relaciones de ${tul}`}><svg className="technique-graph" viewBox={`0 0 1020 ${height}`} role="img" aria-label={`Relaciones entre ${tul}, sus posturas y técnicas`}>
       <defs><marker id="graph-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#697991" /></marker></defs>
-      <text className="graph-context-label" x={techniqueX} y="26">Contexto de secuencia — no se contabiliza como movimiento</text>
       <g className="graph-stance graph-stance--context"><rect x={techniqueX} y={startY - 38} width={techniqueWidth} height="76" rx="12" /><SvgText value={`Inicio: ${stance.inicio_detalle}`} x={techniqueX + techniqueWidth / 2} y={startY} width={72} /></g>
       <g className="graph-tul"><rect x="120" y={centerY - 34} width="180" height="68" rx="34" /><SvgText value={tul} x={210} y={centerY} width={24} className="graph-tul-label" /></g>
       {nodes.map((node, index) => {
