@@ -16,3 +16,6 @@
 .technique-copy{gap:9px}.technique-entry{display:grid;gap:3px}.technique-entry+.technique-entry{padding-top:9px;border-top:1px solid color-mix(in srgb,var(--tone) 24%,white)}
 
 .global-graph{display:block;min-width:1380px;width:100%;height:auto}.global-edge{fill:none;stroke-width:1.75;opacity:.58}.global-tul-label{fill:#fff;font-size:12px;font-weight:850}.global-tul-context{fill:#52627b;font-size:10px;font-weight:700}.global-tech circle{stroke-width:2}.global-tech text{fill:#263750;font-size:11px;font-weight:700}.global-tech--defense circle{fill:#eff6ff;stroke:#1d4ed8}.global-tech--punch circle{fill:#fff1f2;stroke:#b91c1c}.global-tech--strike circle{fill:#faf5ff;stroke:#7e22ce}.global-tech--thrust circle{fill:#ecfeff;stroke:#0e7490}.global-tech--kick circle{fill:#f0fdf4;stroke:#15803d}.global-tech--other circle{fill:#f3f4f6;stroke:#4b5563}.global-empty{fill:#52627b;font-size:15px;font-weight:750}
+
+/* Tres filtros restantes: figura/tul, tipo técnico y terminología. */
+.filter-grid{grid-template-columns:1.2fr 1fr 1fr}
