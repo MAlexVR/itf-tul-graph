@@ -7,7 +7,7 @@ type GraphFilters = { category: string; technique: string };
 type Point = { x: number; y: number };
 const all = "__all__";
 const other = "__other__";
-const palette = ["#dc2626", "#ea580c", "#ca8a04", "#16a34a", "#0891b2", "#2563eb", "#4f46e5", "#7c3aed", "#c026d3", "#db2777", "#be123c"];
+const palette = ["#2563eb", "#d97706", "#059669", "#dc2626", "#7c3aed", "#0891b2", "#65a30d", "#db2777", "#4f46e5", "#ea580c", "#0d9488"];
 
 function textFor(item: Pick<Movement, "coreano" | "espanol">, language: Language) {
   return language === "korean" ? item.coreano : language === "spanish" ? item.espanol : `${item.coreano} — ${item.espanol}`;
@@ -49,7 +49,7 @@ function InteractiveGraphCanvas({ label, children }: { label: string; children: 
   const pinchStart = useRef<{ distance: number; zoom: number } | null>(null);
   const reset = () => { setZoom(1); setPan({ x: 0, y: 0 }); };
 
-  const limitZoom = (value: number) => Math.min(2.4, Math.max(0.55, Number(value.toFixed(2))));
+  const limitZoom = (value: number) => Math.min(2.4, Math.max(0.3, Number(value.toFixed(2))));
   const pointerDistance = () => {
     const [first, second] = Array.from(pointers.current.values());
     return first && second ? Math.hypot(second.x - first.x, second.y - first.y) : 0;

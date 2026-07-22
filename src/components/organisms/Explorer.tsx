@@ -50,7 +50,7 @@ export function Explorer({ data }: { data: GraphData }) {
       <aside className="source-note"><strong>Fuente editorial</strong><span>Manual de Teoría y Programa Técnico de Taekwon-Do ITF · Asociación Colombiana de Taekwon-Do ITF</span></aside>
     </section>
 
-    <section className="stats-grid" aria-label="Cobertura del inventario"><StatCard value={basicCount} label="figuras básicas (Saju)" /><StatCard value={tulCount} label="tules" /><StatCard value={movementCount} label="movimientos" /><StatCard value={data.techniques.length} label="técnicas canónicas" /></section>
+    <section className="stats-strip" aria-label="Cobertura del inventario"><StatCard value={basicCount} label="figuras básicas (Saju)" /><StatCard value={tulCount} label="tules" /><StatCard value={movementCount} label="movimientos" /><StatCard value={data.techniques.length} label="técnicas" /></section>
 
     <section className="filter-panel" aria-label="Filtros de exploración">
       <div className="filter-heading"><strong>Explora paso a paso</strong><span>Elige opciones de las listas; el contenido se adapta automáticamente.</span></div>
@@ -62,7 +62,7 @@ export function Explorer({ data }: { data: GraphData }) {
       <button className="clear-button" onClick={clear}>Restablecer filtros</button>
     </section>
 
-    <section className="category-cards" aria-label="Resumen por tipo técnico">
+    <section className="category-chips" aria-label="Resumen por tipo técnico">
       {categoryGroups.map((group) => <CategoryCard key={group.value} label={group.label} count={categoryCounts[group.value]} tone={group.tone} active={category === group.value} onClick={() => setCategory(group.value)} />)}
     </section>
 
